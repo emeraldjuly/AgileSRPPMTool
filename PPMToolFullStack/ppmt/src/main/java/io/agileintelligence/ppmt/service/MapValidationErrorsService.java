@@ -6,7 +6,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -14,6 +13,7 @@ import java.util.Map;
 public class MapValidationErrorsService {
 
     public ResponseEntity<?> MapValidationErrorsService(BindingResult result) {
+
         if (result.hasErrors()) {
 
             Map<String, String> errorMap = new HashMap<>();

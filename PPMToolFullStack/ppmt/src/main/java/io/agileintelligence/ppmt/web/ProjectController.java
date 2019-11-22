@@ -1,6 +1,5 @@
 package io.agileintelligence.ppmt.web;
 
-
 import io.agileintelligence.ppmt.domain.Project;
 import io.agileintelligence.ppmt.service.MapValidationErrorsService;
 import io.agileintelligence.ppmt.service.ProjectService;
@@ -10,7 +9,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.*;
-
 import javax.validation.Valid;
 import java.lang.reflect.Field;
 import java.util.HashMap;
