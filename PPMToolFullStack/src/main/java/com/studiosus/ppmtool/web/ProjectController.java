@@ -31,9 +31,7 @@ public class ProjectController {
     public ResponseEntity<?> createNewProject(@Valid @RequestBody Project project, BindingResult result){
 
         ResponseEntity<?> errorMap = mapValidationErrorService.MapValidationService(result);
-
         if(errorMap != null) return errorMap;
-
 
         //save Proj to Database h2
         Project project1 = projectService.saveOrUpdateProject(project);
